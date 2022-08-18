@@ -1,0 +1,70 @@
+name: genshin_impact_lfg
+description: Search for a world for needs
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Code generation
+  freezed_annotation: ^2.1.0
+  json_annotation: ^4.6.0
+
+  # Internationalization
+  intl: ^0.17.0
+  flutter_localizations:
+    sdk: flutter
+
+  # Logging
+  l: ^3.2.0
+  stack_trace: ^1.10.0
+
+  # Persistance
+  shared_preferences: ^2.0.15
+
+  # Navigation
+  auto_route: ^4.2.1
+
+  # BLoC
+  flutter_bloc: ^8.1.1
+  bloc_concurrency: ^0.2.0
+
+  # Material design
+  breakpoint: ^1.2.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # code gen
+  build_runner: ^2.2.0
+  freezed: ^2.1.0+1
+  json_serializable: ^6.3.1
+  build_web_compilers: ^3.2.5
+  auto_route_generator: ^4.2.1
+
+  # testing
+  bloc_test: ^9.1.0
+  mocktail: ^0.3.0
+  coverage: ^1.5.0
+
+  # analyzer
+  dart_code_metrics: ^4.17.1
+  flutter_lints: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+flutter_intl:
+  enabled: true
+  arb_dir: lib/src/core/l10n
+  output_dir: lib/src/core/generated/localization
+
+flutter_gen:
+  output: lib/src/core/generated/resources
